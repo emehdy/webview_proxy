@@ -1,0 +1,17 @@
+{
+  "name": "webview_proxy",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "angular-sanitize": "latest",
+    "angular-route": "latest",
+    "angular-animate": "latest",
+    "angular-touch": "latest",
+    "angular-ui": "latest",
+    "ui.bootstrap":"latest"
+  },
+  "devDependencies": {
+  }
+}
