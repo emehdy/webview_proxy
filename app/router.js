@@ -16,6 +16,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: "/uib-tabs",
       templateUrl: "pages/uib-tabs.html"
     })
+   .state('uib-modal', {
+      url: "/uib-modal",
+      templateUrl: "pages/uib-modal.html"
+    })
    
 
    
