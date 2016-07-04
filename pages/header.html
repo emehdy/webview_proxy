@@ -1,0 +1,66 @@
+<style>
+  .navbar-nav .dropdown .navbar-brand {
+    max-width: 100%;
+    margin-right: inherit;
+    margin-left: inherit;
+}
+
+.header-placeholder {
+    height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .dropdown.open > .navbar-brand + .dropdown-menu {
+        left: 10px;
+    }
+
+    .header-placeholder {
+        height: 50px;
+    }
+
+    .navbar-nav .dropdown .navbar-brand {
+        max-width: 200px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+}
+  
+</style>
+     <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="#">Webview Proxy</a>
+        </div>
+        <nav class="hidden-xs">
+            <ul class="nav navbar-nav">
+                <a href="#top" role="button" class="navbar-brand">
+                  Webview Proxy
+                </a>
+                <li class="dropdown" uib-dropdown="" style="">
+                    <a role="button" class="dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+                        Directives <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#bootstrap">Bootstrap</a></li>
+                        <li><a href="#uib-tabs">Tabs</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#home">Home</a></li>
+                
+            </ul>
+        </nav>
+        <nav class="visible-xs collapse" uib-collapse="!isCollapsed" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li><a href="#home" ng-click="isCollapsed = !isCollapsed">Home</a></li>
+                <li><a href="#directives_small" ng-click="isCollapsed = !isCollapsed">Directives</a></li>
+            </ul>
+        </nav>
+    </div>
