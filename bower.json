@@ -10,7 +10,10 @@
     "angular-animate": "latest",
     "angular-touch": "latest",
     "angular-ui": "latest",
-    "ui.bootstrap":"latest"
+    "angular-bootstrap":"latest",
+    "ui.bootstrap":"latest",
+    "angular-ui-router":"latest"
+   
   },
   "devDependencies": {
   }

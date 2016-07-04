@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="proxyApp">
+<head>
+  <title>WV Proxy</title>
+  <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap-theme.min.css">
+  <style>
+    html{overflow-y:auto;}
+    </style>
+</head>
+
+<body>
+   <header ng-include="'pages/header.html'" class="navbar navbar-default navbar-fixed-top navbar-inner"></header>
+  <div class="header-placeholder"></div>
+ <div class="container theme-showcase" role="main" ui-view>
+ </div> <!-- /container -->
+  
+  
+  <script src="bower_components\angular\angular.min.js"></script>
+  <script src="bower_components\angular-bootstrap\ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components\angular-ui\build\angular-ui.min.js"></script>
+  <script src="bower_components\angular-ui-router\release\angular-ui-router.min.js"></script>
+  <script src="app\app.js"></script>
+   <script src="app\router.js"></script>
+</body>
+</html>
